@@ -1,8 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./titleCards.css";
-import cards_data from "./../../assets/cards/Cards_data";
+// import cards_data from "./../../assets/cards/Cards_data";
 import { Link } from "react-router-dom";
 
+// eslint-disable-next-line react/prop-types
 const TitileCards = ({ title, category }) => {
   const [apiData, setApiData] = useState([]);
   const cardsRef = useRef();

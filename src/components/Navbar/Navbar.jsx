@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
 import search_icon from "../../assets/search_icon.svg";
@@ -6,6 +6,7 @@ import bell_icon from "../../assets/bell_icon.svg";
 import profile_img from "../../assets/profile_img.png";
 import caret_icon from "../../assets/caret_icon.svg";
 import { logout } from "../../firebase";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const navRef = useRef();
@@ -23,7 +24,9 @@ const Navbar = () => {
       <div className="navbar-left">
         <img src={logo} alt="" />
         <ul>
-          <li>Home</li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
           <li>TV Shows</li>
           <li>Movies</li>
           <li>New & Popular</li>

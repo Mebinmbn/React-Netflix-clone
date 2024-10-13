@@ -27,6 +27,9 @@
 .navbar ul li{
     cursor: pointer;
 }
+.navbar ul  li:hover{
+    color: darkgray;
+}
 
 .navbar-right{
     display: flex;
@@ -97,4 +100,12 @@
         gap: 10px;
     }
 }
+
+.navbar a {
+    color: #e5e5e5;
+    text-decoration: none;
+}
+.navbar a:hover {
+    color: darkgray;
+}  
 
