@@ -7,6 +7,7 @@ import play_icon from "../../assets/play_icon.png";
 import info_icon from "../../assets/info_icon.png";
 import TitileCards from "../../components/TitleCards/TitileCards";
 import Footer from "../../components/Footer/Footer";
+import { Link } from "react-router-dom";
 
 const home = () => {
   return (
@@ -22,9 +23,11 @@ const home = () => {
           </p>
 
           <div className="hero-btns">
-            <button className="btn">
-              <img src={play_icon} alt="" /> Play
-            </button>
+            <Link to={`/player/957452`}>
+              <button className="btn">
+                <img src={play_icon} alt="" /> Play
+              </button>
+            </Link>
             <button className="btn dark-btn">
               <img src={info_icon} alt="" /> Info
             </button>

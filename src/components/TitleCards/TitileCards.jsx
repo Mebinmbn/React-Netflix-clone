@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 const TitileCards = ({ title, category }) => {
   const [apiData, setApiData] = useState([]);
   const cardsRef = useRef();
+  console.log(category);
 
   const options = {
     method: "GET",
